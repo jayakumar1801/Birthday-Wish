@@ -5,7 +5,7 @@ const seconds = document.querySelector("#seconds");
 
 function UpdateTime() {
   const currentYear = new Date().getFullYear();
-  const newYear = new Date(`October 22 2024 00:00:00`);
+  const newYear = new Date(`October 22 ${currentYear} 00:00:00`);
   const currentDate = new Date();
   const diff = newYear - currentDate;
   const d = Math.floor(diff / 1000 / 60 / 60 / 24);
